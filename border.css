@@ -1,0 +1,58 @@
+div.main .game .tc a .one{
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    border-bottom: 1px solid #000;
+    top: 5% ;
+    left: 5%;
+
+}
+div.main .game .tc a .two{
+    display: block;
+    position: absolute;
+    width: 1%;
+    height: 0px;
+    border-left: 1px solid #000;
+    top: 5% ;
+    left: 95%;
+
+}
+div.main .game .tc a .three{
+    display: block;
+    position: absolute;
+    width: 135px;
+    height: 1px;
+    top: 95% ;
+    left: 5%;
+    overflow: hidden;
+}
+div.main .game .tc a .three1{
+    display: block;
+    position: absolute;
+    width: 135px;
+    height: 1px;
+    top: 0;
+    left: 100%;
+    border: 1px solid #000;
+
+}
+div.main .game .tc a .four{
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 73px;
+    overflow: hidden;
+    top: 5% ;
+    left: 5%;
+}
+div.main .game .tc a .four1 {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 73px;
+    border: 1px solid #000;
+    overflow: hidden;
+    top: 100% ;
+
+}

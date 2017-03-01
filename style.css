@@ -1,0 +1,959 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+}
+body{font-family: "微软雅黑";font-size: 12px;margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+a{
+    text-decoration: none;
+    color: #8e8e8c;
+    font-family: "微软雅黑";
+}
+.ef{
+    margin: 0 25px;
+}
+/*自己的样式开始*/
+header{
+    width: 100%;
+    min-height: 50px;
+    margin:  0 auto;
+
+}
+.main{
+    width: 100%;
+    min-height: 100px;
+    margin: 0 auto;
+}
+footer{
+    width: 100%;
+    height: 125px;
+    background: #272A2C;
+    padding: 40px 0;
+}
+/*导航部分*/
+nav{
+    width: 1260px;
+    height:100px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+nav .logo a{
+    width:191px;  
+    height:58px;
+    display: block;
+    background: url("../img/logo1_1c91104.png") no-repeat ;
+    margin-top:21px ;
+}
+nav>.text{
+    width:990px;
+    height:100px;
+    line-height: 100px;
+    float: right;
+    overflow: hidden;
+}
+nav>.text a{
+    display:inline-block;
+    height: 100px;
+    position: relative;
+    margin: 0 25px;
+    font-size: 16px;
+}
+nav>.text a span{
+    width: 0%;
+    height: 5px;
+    display: inline-block;
+    background: #D11A39;
+    position: absolute;
+    left: 0;
+    transition: all 0.5s;
+}
+nav>.text a:hover span{
+    width: 100%;
+}
+nav>.text i{
+   width: 4px;
+    display: inline-block;
+    height: 100%;
+}
+/*轮播大部分开始*/
+/*轮播部分*/
+div.main .all{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+div.main .lunbo{
+    width: 100%;
+    max-width: 1920px;
+    display: block;
+    height: 820px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+div.main .lunbo .parent{
+    width: 100%;
+    height: 820px;
+    display: none;
+    position: absolute;
+}
+
+div.main .lunbo>.one{
+    background: url("../img/6cf0fdda-52a4-472d-b96b-149bf096093e.png") no-repeat center;
+    position: relative;
+    color: #000;
+}
+div.main .lunbo>.two{
+     background: url("../img/39314a21-1a01-4991-9989-909f24621dcf.png") no-repeat center;
+    color: #f00;
+ }
+div.main .lunbo>.three{
+    background: url("../img/f962f960-b53e-4623-9f1c-8835d0fbb051.png") no-repeat center;
+    color: #fff;
+}
+div.main .lunbo>.four{
+    background: url("../img/b80e1499-0197-44f2-a4e6-c48903bb13c5.png") no-repeat center;
+    color: #443381;
+}
+div.main .lunbo>.five{
+    background: url("../img/4d2dcb82-38fe-44f3-a150-c693b55f4609.png") no-repeat center;
+    color: #CF0F32;
+}
+/*lunbo 图片里的div*/
+div.main .lunbo .text{
+    width: 490px;
+    min-height: 100px;
+    background: rgba(255 255 255 0);
+    position: absolute;
+    left: 18%;
+    top:35%;
+}
+div.main .lunbo .text p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+
+}
+
+div.main .lunbo .text i{
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-bottom: 1px solid #CF0F32;
+    margin: 10px 0;
+}
+div.main .lunbo .text b{
+    display: block;
+    width: 105px;
+    height: 40px;
+    background: #CF0F32;
+    color: #fff;
+    line-height: 40px;
+    border-radius:20px;
+    text-align: center;
+    margin-top: 30px;
+}
+/*点开始了*/
+div.main .lunbo .dian{
+    position: absolute;
+    overflow: hidden;
+    left: 85%;
+    top: 620px;
+}
+div.main .lunbo .dian li{
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: 3px solid #fff;
+    border-radius:50% ;
+    float: left;
+    margin-right:10px ;
+
+}
+/*左右点击的小框*/
+div.main .lunbo .left-f{
+     width: 45px;
+     height: 80px;
+     background:#CF0F32;
+     position: absolute;
+     top: 300px;
+ }
+div.main .lunbo .yugao{
+    display: none;
+}
+div.main .lunbo .left-f span{
+    width: 25px;
+    height: 40px;
+    display: inline-block;
+    background: url("../img/uii.png") no-repeat -52px -155px ;
+    margin: 18px 8px;
+    cursor: pointer;
+}
+div.main .lunbo .left-f .yugao{
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    left: 45px;
+    background: #282B2D;
+    top: 0;
+    padding-left:100px ;
+    border-left:2px solid #000 ;
+    text-align: center;
+    color: #fff;
+}
+div.main .lunbo .yugao .big{
+    font-size: 16px;
+    margin-top:20px ;
+}
+div.main .lunbo .right-f{
+    width: 45px;
+    height: 80px;
+    background:#CF0F32 ;
+    position: absolute;
+    right:0;
+    top: 300px;
+    cursor: pointer;
+}
+
+div.main .lunbo .right-f span{
+    width: 25px;
+    height: 40px;
+    display: inline-block;
+    background: url("../img/uii.png") no-repeat -78px -155px ;
+    margin: 18px 8px;
+}
+div.main .lunbo .right-f .yugao{
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    left: -200px;
+    background: #282B2D;
+    top: 0;
+    padding-right:100px ;
+    border-right:2px solid #000 ;
+    text-align: center;
+    color: #fff;
+}
+/*轮播下的div开始*/
+div.main .lunbo-buttom{
+    width: 100%;
+    height: 200px;
+    background: url("../img/con1_bg_a3a0206.jpg") no-repeat center;
+}
+div.main .lunbo-buttom .center{
+    width: 1260px;
+    top: -120px;
+    height: 320px;
+    position: relative;
+    margin: 0 auto;
+    background: #282B2D;
+    overflow: hidden;
+}
+div.main .lunbo-buttom .left-one{
+    width:150px;
+    height: 100%;
+    text-align: center;
+    color: #727272;
+    float: left;
+}
+div.main .lunbo-buttom .left-one .oct{
+    margin-top: 72px;
+}
+div.main .lunbo-buttom .left-one h1{
+    font-size: 58px;
+    height: 58px;
+    line-height: 58px;
+}
+div.main .lunbo-buttom .left-one i{
+    display: block;
+    width: 22px;
+    height: 5px;
+    background: #CF1132;
+    margin: 15px auto;
+
+}
+div.main .lunbo-buttom .left-one .dong{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+div.main .lunbo-buttom .left-one .li{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 60px;
+    padding-left: 60px;
+}
+div.main .lunbo-buttom .left-one .li a{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #727272;
+    display: block;
+    float: left;
+    margin-right:  10px;
+}
+/*nb two*/
+div.main .lunbo-buttom .left-two{
+    width: 640px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+div.main .lunbo-buttom .left-two .all{
+    width: 1280px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    transition: all 1s;
+}
+div.main .lunbo-buttom .left-two .all>div{
+    width: 320px;
+    height: 100%;
+    float: left;
+    position: relative;
+    transition: all 0.5s;
+}
+div.main .lunbo-buttom .left-two .all>div:hover{
+    background-position: center center;
+}
+div.main .lunbo-buttom .l-one{
+    background: url("../img/91a17595-4fe8-44fe-8a2d-731f236a0ef3.png") no-repeat ;
+}
+div.main .lunbo-buttom .l-two{
+    background: url("../img/7aea9cfd-1c3f-4f54-a564-af60079fce2d.png");
+}
+div.main .lunbo-buttom .l-three{
+    background: url("../img/53efa731-63c5-4533-bba7-ad322eb7e97e.png");
+}
+div.main .lunbo-buttom .l-four{
+    background: url("../img/cad53661-ec02-4111-a751-15f14995285a.png");
+}
+div.main .lunbo-buttom .left-two .all>div .bt{
+    width: 100%;
+    height: 120px;
+    display: block;
+    background: rgba( 256,0,0,.5);
+    position: absolute;
+    top:320px;
+    z-index: 0;
+    transition:all 0.5s ;
+}
+div.main .lunbo-buttom .left-two .all>div:hover .bt{
+    top:200px;
+}
+div.main .lunbo-buttom .left-two .all>div .zore{
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 0.5s;
+}
+div.main .lunbo-buttom .left-two .all>div:hover .zore{
+    opacity: 0;
+}
+div.main .lunbo-buttom .left-two .all>div .top{
+    width: 100%;
+    height: 60px;
+    background: url("../img/bg_font_top_ec5611f.png") no-repeat center;
+    position: absolute;
+    top: -60px;
+    transition: all 0.5s;
+}
+div.main .lunbo-buttom .left-two .all>div:hover .top{
+    top:0;
+}
+div.main .lunbo-buttom .left-two .all>div .big {
+    position: absolute;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    top: 50px;
+    transition: all 0.5s;
+}
+div.main .lunbo-buttom .left-two .all>div:hover .big{
+    top:20px;
+}
+div.main .lunbo-buttom .left-two .all>div .small{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    top: 200px;
+    transition: all 0.5s;
+    z-index: 1;
+}
+div.main .lunbo-buttom .left-two .all>div:hover .small{
+    top:250px;
+}
+div.main .lunbo-buttom .left-two .all>div .like{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    top: 90%;
+    z-index: 1;
+}
+div.main .lunbo-buttom .left-two .all>div .like a{
+    color: #fff;
+}
+
+/*left-three 开始*/
+div.main .lunbo-buttom .left-three{
+    width: 470px;
+    height: 100%;
+    float: left;
+    position: relative;
+    padding: 45px 40px 15px 40px;
+}
+div.main .lunbo-buttom .left-three .big{
+    font-size: 26px;
+    font-weight: bold;
+    color: #E41F43;
+}
+div.main .lunbo-buttom .left-three i{
+    display: block;
+    height: 2px;
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+    margin: 10px 0 20px 0;
+}
+div.main .lunbo-buttom .left-three li{
+    padding-left: 15px;
+    background: url("../img/n-icon_c141505.png") no-repeat 0 5px;
+    margin-bottom:10px  ;
+}
+div.main .lunbo-buttom .left-three li a{
+    font-size: 14px;
+    color: #C3C3C3;
+    transition: all 0.5s;
+}
+div.main .lunbo-buttom .left-three li a:hover{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+div.main .lunbo-buttom .left-three .add{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url("../img/index_1_z_8fedf32.png") no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/*hot 部分开始*/
+div.main .hot{
+    width: 100%;
+    height: 500px;
+    background: #f1f1f1;
+    padding-top: 50px;
+}
+div.main .hot-all{
+    width: 1260px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+div.main .hot-all .nav{
+   overflow: hidden;
+    border-left: 4px solid #CF1132;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 22px;
+    height: 22px;
+    margin-bottom: 30px;
+    line-height: 22px;
+}
+div.main .hot-all .nav a{
+    display: inline-block;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+}
+div.main .hot-all .nav i{
+    width: 21px;
+    height: 17px;
+    margin-left: 10px;
+    display: inline-block;
+    background: url("../img/index_1_z_8fedf32.png") no-repeat -20px -37px ;
+}
+div.main .hot-all .nav a:hover i{
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+/*show all*/
+div.main .show-all{
+    width: 1260px;
+    height: 325px;
+    margin: 0 auto ;
+    overflow: hidden;
+    position: relative;
+}
+div.main .show-all .show{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+
+}
+div.main .show-all .show>.show-box{
+    width: 400px;
+    height: 320px;
+    position: relative;
+    background: #fff;
+    float: left;
+    overflow: hidden;
+}
+div.main .show-all .show>.show-box dd{
+    margin: 20px 0 0 20px;
+}
+div.main .show-all .show>.show-box .big{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -10px;
+}
+div.main .show-all .show>.show-box .small{
+    font-size: 14px;
+    color: #aaa;
+}
+div.main .show-all .show>.show-box p.right{
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    overflow: hidden;
+    left: 40%;
+    top: 85%;
+}
+div.main .show-all .show>.show-box a.xin{
+    padding-left: 35px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    float: left;
+    font-size: 14px;
+    background: url("../img/like_fe71b2c.png") no-repeat 0 0;
+}
+div.main .show-all .show>.show-box a.xin:hover{
+    background: url("../img/like_fe71b2c.png") no-repeat 0 -30px;
+}
+div.main .show-all .show>.show-box a.rom{
+    height: 30px;
+    line-height: 30px;
+    margin-left: 15px;
+    display: block;
+    float: left;
+    width: 88px;
+    text-align: center;
+    font-size: 14px;
+    background: url("../img/btn1_c7dd2d3.png") no-repeat 0 -30px;
+
+}
+div.main .show-all .show>.show-box a.rom:hover{
+    transition: background-position 0.2s;
+    background: url("../img/btn1_c7dd2d3.png") no-repeat 0 0;
+    color: #fff;
+}
+div.main .show-all .show>.show-box .fu{
+    width: 400px;
+    height: 176px;
+    padding: 40px 30px;
+    overflow: hidden;
+    position: absolute;
+    background: #cf1132;
+    opacity: 0.85;
+    top: -176px;
+    transition: all 0.3s;
+}
+div.main .show-all .show>.show-box dt:hover .fu{
+    top:0;
+}
+div.main .show-all .show>.show-box .fu .pic{
+    margin-right: 20px;
+}
+div.main .show-all .show>.show-box .fu .text p{
+    font-size: 14px;
+    margin:5px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    display: inline-block;
+}
+
+div.main .show-all .show>.show-box .f-i{
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+}
+div.main .show-all .show>.show-box .fu .text i{
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    float: left;
+    background: url("../img/score2_e281cef.png") no-repeat;
+}
+div.main .show-all .show>.show-box .down{
+    padding-left: 15px;
+    background: url("../img/hot-down-icon_66eddd9.png") no-repeat 0 4px;
+}
+/*love 部分开始*/
+div.main .love{
+    width: 100%;
+}
+div.main .love-top{
+    width: 100%;
+    margin: 0 auto;
+    height: 310px;
+    background: url("../img/center_bg_a9bc794.jpg") no-repeat center;
+}
+div.main .love-buttom{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 370px;
+}
+div.main .love-buttom ul{
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+div.main .love-buttom li{
+    float: left;
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+div.main .love-buttom .one a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url("../img/0d92fc42-cf29-4f28-8dab-62c1dc4bc46d.png") no-repeat;
+    background-position:center ;
+
+}
+div.main .love-buttom .two a{
+     display: block;
+     width: 100%;
+     height: 100%;
+     background:url("../img/15e4fede-97cc-4a75-9066-9bb7e140e7d3.jpg") no-repeat;
+     background-position:center ;
+
+ }
+div.main .love-buttom .three a{
+      display: block;
+      width: 100%;
+      height: 100%;
+      background:url("../img/2015-04-18_571915.jpg") no-repeat;
+      background-position:center ;
+
+  }
+div.main .love-buttom .four a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url("../img/2015-04-18_571917.jpg") no-repeat;
+    background-position:center ;
+
+}
+div.main .love-buttom .five a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url("../img/2015-05-27_592267.jpg") no-repeat;
+    background-position:center ;
+
+}
+div.main .love-buttom .black{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top:0;
+    transition: all 0.8s;
+}
+div.main .love-buttom li:hover .black{
+    top:100%;
+}
+div.main .love-buttom .red{
+    width: 100%;
+    height: 50%;
+    background: rgba(256,0,0,0.8);
+    position: absolute;
+    top:100%;
+    transition: all 0.8s;
+}
+div.main .love-buttom li:hover .red{
+    top:50%;
+}
+div.main .love-buttom .text{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top:50%;
+    font-size: 18px;
+    transition: all 0.8s;
+}
+div.main .love-buttom li:hover .text{
+    top:70%;
+}
+/*show2 部分开始*/
+div.main .show2>.show-box dt img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+div.main .show2>.show-box dt a{
+    width: 400px;
+    height: 176px;
+    display: block;
+    overflow: hidden;
+}
+div.main .show2>.show-box dt img:hover{
+    width: 105%;
+    height: 105%;
+}
+/*滑动门特效开始*/
+div.main .door{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    background: #f1f1f1;
+    margin-bottom: 50px;
+}
+div.main .door-all{
+    width: 1260px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+div.main .door-all .star{
+    width: 300px;
+    height: 320px;
+    position: absolute;
+    background: linear-gradient(90deg,transparent 0,#fff 50%,transparent 100%);
+    opacity: 0.7;
+    transform: skewX(-35deg);
+    left: -450px;
+}
+div.main .door-all:hover .star{
+    transition: all 2s;
+}
+div.main .door .nav {
+    overflow: hidden;
+    border-left: 4px solid #CF1132;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 22px;
+    height: 22px;
+    margin-bottom: 30px;
+    line-height: 22px;
+}
+div.main .door-all li{
+    float: left;
+    width: 12.5%;
+    height: 320px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+div.main .door-all .hui{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+}
+div.main .door-all .text{
+    font-size: 16px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top:50%;
+}
+div.main .door-all .up{
+    width: 100%;
+    display: block;
+    background: rgba(256,0,0,.7);
+    position: absolute;
+    top:100%;
+    height: 50%;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    padding-top: 50px;
+
+}
+div.main .door-all li:hover .up{
+    top:50%;
+    transition: all 1s;
+}
+div.main .door-all .one{
+    background: url("../img/7aea9cfd-1c3f-4f54-a564-af60079fce2d.png") no-repeat center;
+}
+div.main .door-all .two{
+    background: url("../img/1d3972e7-301e-4f3d-b58c-4fb40905f855.jpg") no-repeat center;
+}
+div.main .door-all .three{
+    background: url("../img/53efa731-63c5-4533-bba7-ad322eb7e97e.png") no-repeat center;
+}
+div.main .door-all .four{
+    background: url("../img/91a17595-4fe8-44fe-8a2d-731f236a0ef3.png") no-repeat center;
+}
+div.main .door-all .five{
+    background: url("../img/111.jpg") no-repeat center;
+}
+div.main .door-all .six{
+    background: url("../img/222.jpg") no-repeat center;
+}
+div.main .door-all .sever{
+    background: url("../img/333.jpg") no-repeat center;
+}
+div.main .door-all .eight{
+    background: url("../img/cad53661-ec02-4111-a751-15f14995285a.png") no-repeat center;
+}
+/* game助手部分开始*/
+div.main .game{
+    width: 1260px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    margin-bottom: 30px;
+}
+div.main .game .zi-all{
+    overflow: hidden;
+    height: 205px;
+    margin-bottom: 30px;
+}
+div.main .game .zi{
+    float: left;
+    height: 200px;
+    margin-right: 16px;
+}
+div.main .game .zi1{
+     width: 150px;
+ }
+div.main .game .zi2{
+     width: 304px;
+ }
+div.main .game .zi4{
+    width: 608px;
+    float: left;
+    height: 200px;
+}
+
+div.main .game p{
+    font-size:16px ;
+    width: 100px;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: #888;
+    background: url("../img/l-icon_01b84e0.png") no-repeat 0 4px;
+}
+div.main .game .tc{
+ overflow: hidden;
+}
+div.main .game .tc a{
+    width: 150px;
+    height: 80px;
+    display: inline-block;
+    background: #E3E3E3;
+    padding: 10px 0;
+    text-align: center;
+    margin: 1px;
+    float: left;
+    position: relative;
+    transition: all 0.5s;
+}
+div.main .game .tc a:hover{
+    background: #CF1132;
+    color: #fff;
+}
+
+div.main .game .tc .big{
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    font-size: 16px;
+    color: #000;
+    transition: all 0.5s;
+}
+div.main .game .tc a:hover .big{
+    color: #fff;
+}
+
+/*footer*/
+footer .all{
+    width: 765px;
+    height: 70px;
+    margin: 0 auto;
+
+}
+footer .all .one{
+    width: 118px;
+    height: 31px;
+    display: inline-block;
+    cursor: pointer;
+    background: url("../img/netease.2.png") no-repeat;
+}
+footer .all .two{
+    width: 134px;
+    height: 31px;
+    display: inline-block;
+    cursor: pointer;
+    background: url("../img/nie.2.png") no-repeat;
+}
+footer .all .three{
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+    cursor: pointer;
+    background: url("../img/wen.png") no-repeat;
+    margin: 0 15px;
+}
+footer .all .top{
+    overflow: hidden;
+}
+footer .all .text li {
+    float: left;
+    color: #E23A3F;
+}
+footer .all .text li span{
+    margin: 0 3px;
+}
+footer .all .text .red a{
+    color:  #E23A3F;
+}
+footer .all .text a:hover{
+    text-decoration: underline;
+}
+footer .all .text .fff{
+    color: #fff;
+}
+footer .all .buttom{
+    color: #fff;
+    margin: 10px 0 0 -5px;
+}
